@@ -83,10 +83,6 @@ button:hover {
         margin: 0;
         padding: 0;
     }
-
-    .prog-projects {
-        grid-template-columns: 1fr;
-    }
 }
 
 @media (min-width: 640px) and (max-width: 1024px) {
@@ -137,6 +133,7 @@ button:hover {
 
 .mybestproj {
     margin-top: 30px;
+    margin-bottom: 15px;
 }
 
 .header {
