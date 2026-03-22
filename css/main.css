@@ -1,0 +1,182 @@
+:root {
+    --background: #181926;
+    --background2: #1e2030;
+    --overlay: #24273a;
+    --text: #cad3f5;
+    --subtext: #b8c0e0;
+    --subtext2: #a5adcb;
+    --accent: #8aadf4;
+    --subaccent: #b7bdf8;
+    --accent2: #c6a0f6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--subtext);
+    transition: color ease 0.3s;
+}
+
+a:hover {
+    color: var(--subaccent);
+}
+
+button {
+    background-color: var(--accent);
+    text-decoration: none;
+
+    border: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    font-weight: 800;
+
+    border-radius: 7px;
+
+    transition: background-color ease 0.5s;
+}
+
+button:hover {
+    background-color: var(--subaccent);
+}
+
+
+.body {
+    background-color: var(--background);
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--text);
+    min-height: 100vh;
+
+    max-width: 1280px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 640px) {
+    .header,
+    .body {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 1024px) {
+    .header,
+    .body {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header,
+    .body {
+        padding-left: 4rem; 
+        padding-right: 4rem;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    padding-left: auto;
+    padding-right: auto;
+
+    box-shadow: 0 2px 8px var(--overlay);
+
+    background-color: rgb(36, 39, 58, 0.85);
+    backdrop-filter: blur(10px);
+}
+
+.content {
+    margin-top: 100px;
+}
+
+.technology {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.footer {
+    margin-top: 20px;
+}
+
+.stack {
+    align-items: center;
+    display: flex;
+
+    justify-content: left;
+
+    margin-top: 5px;
+    gap: 25px;
+}
+
+.java,
+.python,
+.cpp {
+    background-color: var(--background2);
+    padding: 4px 30px;
+    border-radius: 7px;
+    border: var(--overlay);
+    border-style: solid;
+    border-width: 2px;
+    transition: border-color 0.5s ease;
+} 
+
+.java:hover,
+.python:hover,
+.cpp:hover {
+    border: 2px solid var(--accent);
+}
+
+
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.nav {
+    align-items: center;
+    display: flex; 
+    gap: 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+.subtext {
+    color: var(--subtext)
+}
+
+.accent {
+    color: var(--accent)
+}
+
+
+.spec {
+    color: var(--subtext2);
+    font-size: 10px;
+}
