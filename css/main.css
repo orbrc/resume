@@ -157,6 +157,7 @@ button:hover {
 
 .header-content {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     
     max-width: 1150px;
