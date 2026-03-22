@@ -68,6 +68,10 @@ button:hover {
         padding-left: 1rem;
         padding-right: 1rem;
     }
+
+    .prog-projects {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (min-width: 640px) and (max-width: 1024px) {
@@ -75,6 +79,10 @@ button:hover {
     .body {
         padding-left: 2.5rem;
         padding-right: 2.5rem;
+    }
+
+    .prog-projects {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -84,6 +92,18 @@ button:hover {
         padding-left: 4rem; 
         padding-right: 4rem;
     }
+    
+    .prog-projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.prog-projects {
+    display: grid;
+    justify-content: space-between;
+    gap: 20px;
+
+    align-items: center;
 }
 
 .header {

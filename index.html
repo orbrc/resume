@@ -20,7 +20,7 @@
         <div class="nav">
             <a href="#info">Инфо</a>
             <a href="#stack">Стек</a>
-            <a href="#project">Проекты</a>
+            <a href="#projects">Проекты</a>
         </div>
 
         <div>
@@ -54,16 +54,31 @@
         </div>
 
 
-        <div>
+        <div id="projects">
+            <script src="scripts/project.js"></script>
             <div>
-                <h2>Мои Топовые Фишки</h2> 
-            </div>
-
-            <div class="frameworks">
-
+                <div>
+                    <h1>Мои Топовые Проекты</h1>
+                </div>
+                <div class="prog-projects">
+                    <prog-project 
+                        title="Борат Ланг"
+                        desc="Язык програмирования с акцентом Борта из одноименного фильма."
+                        stack="C++ | NASM | C# | RUST"
+                    ></prog-project>
+                     <prog-project 
+                        title="Hide"
+                        desc="Анонимный мессенджер, работает как tor."
+                        stack="C++ | Python | Java"
+                    ></prog-project>
+                     <prog-project 
+                        title="arch"
+                        desc="Рисует логотип арч линукс любого размера в терминале"
+                        stack="C++"
+                    ></prog-project>
+                </div>
             </div>
         </div>
-
     </div>
     
     <div class="footer"></div>
