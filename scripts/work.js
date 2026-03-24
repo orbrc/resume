@@ -35,16 +35,21 @@ class Work extends HTMLElement {
                         border-radius: 15px;
                         padding: 15px;
                         border: 2px solid #24273a;
-                   }
-                   .color {
-                        color: #8aadf4;
-                   }
+                        transition: border ease 0.3s;
+                    }
 
-                   .tech {
+                    .work:hover {                        border: 2px solid #8aadf4; 
+                        border: 2px solid #8aadf4; 
+                    }
+                    .color {
+                        color: #8aadf4;
+                    }
+
+                    .tech {
                         display: flex;
                         align-items: left;
                         gap: 20px;
-                   }
+                    }
 
                    .lang {
                         background-color: #24273a;
@@ -52,26 +57,34 @@ class Work extends HTMLElement {
                         border-radius: 5px;
                         margin-bottom: 15px;
                         margin-top: 2px;
-                   }
-                   .work-title {
+                        transition: box-shadow ease 0.3s;
+                        transition: transform ease 0.3s;    
+                    }
+
+                    .lang:hover {
+                        box-shadow: 0px 1px 1px #8aadf4;
+                        transform: translateY(-5px);   
+                    }
+
+                    .work-title {
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                   }
+                    }
 
                    .work-time {
                         color: #b8c0e0;
-                   }
+                    }
 
-                   .work-desc {
+                    .work-desc {
                         margin: 0px;
                         margin-bottom: 10px;
-                   }
+                    }
 
-                   h2 {
-                    margin: 0px;
-                    padding: 0px;
-                   }
+                    h2 {
+                        margin: 0px;
+                        padding: 0px;
+                    }
 
                 </style>
                 <div class="work">

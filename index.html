@@ -11,6 +11,25 @@
 </head>
 
 <body class="body">
+    <div id="madal" class="madal">
+        <div class="madal-content">            
+            <h2>Дмитрий</h2>
+            <p class="accent username">@chipza</p>
+
+            <div class="madal-info">
+                <p>Отвечаю быстро в любое время суток.</p>
+            </div>
+            
+            <button class="tgbtn" onclick="location.href='https://t.me/chipza'">
+                Telegram
+            </button>
+            <button id="closebtn" class="closebtn">
+                Закрыть
+            </button>
+        </div>
+    </div>
+    <div class="madal-blur" id="madal-blur"></div>
+
     <div class="header fixed">
         <div class="header-content">
             <div class="profile">
@@ -25,12 +44,13 @@
             </div>
 
             <div>
-                <button class="contact">
+                <button id="contact" class="contact">
                     Контакты
                 </button>
             </div>
         </div>
     </div>
+    <script src="scripts/contact.js"></script>
 
     <div class="content" id="info">
         <div class="info">

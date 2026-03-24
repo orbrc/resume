@@ -60,6 +60,7 @@ button:hover {
 
     margin-left: auto;
     margin-right: auto;
+    scroll-behavior: auto;
 }
 
 .info {
@@ -176,6 +177,8 @@ button:hover {
 
 .footer {
     margin-top: 20px;
+
+    padding-top: 150px;
 }
 
 .stack {
@@ -233,4 +236,92 @@ button:hover {
 .spec {
     color: var(--subtext2);
     font-size: 10px;
+}
+
+.madal {
+    display: none;
+    position: fixed;
+    background-color: rgb(30, 32, 48);
+    border: 2px solid #8aadf4;
+    border-radius: 10px;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+
+    z-index: 9999;
+    overflow: auto;
+
+    margin: 0px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    max-height: 90%;
+    max-width: 50%;
+}
+
+.madal-blur {
+    position: fixed;
+    display: none;
+    height: 100%;
+    width: 100%;
+
+    left: 0;
+    top: 0;
+
+    color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+    backdrop-filter: blur(5px);
+}
+
+.madal.show {
+    animation: fadeInTransf 0.3s ease forwards;
+}
+
+.madal-blur.show {
+    animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeInTransf {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.9);
+    } to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+.madal-content {
+    display: grid;
+    gap: 5px;
+    text-align: center;
+}
+
+.username {
+    margin-bottom: 40px;
+}
+
+.madal-info {
+    margin-bottom: 5px;
+}
+
+.closebtn {
+    background-color: rgb(0, 0, 0, 0);
+    color: #cad3f5;
+
+    border: 2px solid #8aadf4;
+}
+
+.closebtn:hover {
+    background-color: rgb(0, 0, 0, 0);
+    border-color: #a5adcb;
 }
